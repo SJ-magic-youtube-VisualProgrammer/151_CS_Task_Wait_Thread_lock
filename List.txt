@@ -1,0 +1,46 @@
+・	lambda_test.cs
+・	lock_sample.cs
+・	lock_sample_simple.cs
+
+・	Single Task
+	・	wait_0(Cancel込み).cs
+			Single Task. Cancel込み、await t;
+			
+	・	wait_1.cs
+			Wait();
+		
+	・	wait_2.cs
+			Wait(Int32);
+			
+	・	wait_3.cs
+			await t;
+			
+	・	wait_4.cs
+			t.Result;
+			
+	・	wait_5.cs
+			int result = await t;
+
+・	Multi Task
+	・	wait_6.cs
+			Task.WaitAll(Task[]);
+			
+	・	wait_7.cs
+			Task.WaitAll(Task[], Int32);
+			
+	・	wait_8.cs
+			await Task.WhenAll(Task[]);
+			
+	・	wait_9.cs
+			t[i].Result;
+			
+	・	wait_10.cs
+			int[] results = await Task.WhenAll<int>(Task[]);
+			
+	・	wait_11.cs
+			型の違う戻り値
+				Task.WaitAll
+			
+	・	wait_12.cs
+			型の違う戻り値
+				await Task.WhenAll
